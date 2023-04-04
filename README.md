@@ -22,7 +22,7 @@
 ***
 
 ## Useful links:
-
+https://github.com/ConnorJL/GPT2
 
 ### 
 ### 
