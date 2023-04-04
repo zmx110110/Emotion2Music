@@ -29,5 +29,5 @@
 
 ***
 
-### Project HeFei
+### Project Multi-Music-Transformer made by zmx in HeFei 
 ###  Code 2023
