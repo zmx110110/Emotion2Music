@@ -23,7 +23,9 @@
 
 ## Useful links:
 https://github.com/ConnorJL/GPT2
+
 https://github.com/salu133445/musegan
+
 https://salu133445.github.io/lakh-pianoroll-dataset/
 ### 
 ### 
