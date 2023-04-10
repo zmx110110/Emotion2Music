@@ -3,7 +3,7 @@
 
 ***
 
-## Inference
+## Inference  Please click on the Colab link below to perform music generation inference.
 
 [![Open In Colab][colab-badge]][colab-notebook]
 
@@ -12,7 +12,7 @@
 
 ***
 
-## Training
+## Training  Please click on the Colab link below to conduct model training.
 
 [![Open In Colab][colab-badge]][colab-notebook1]
 
