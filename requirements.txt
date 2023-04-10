@@ -1,0 +1,7 @@
+einops
+torch
+torch-summary
+tqdm
+matplotlib
+fluidsynth  
+midi2audio
