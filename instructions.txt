@@ -1,0 +1,5 @@
+This project 'Multi-Music-Transformer',Created by ZMX.
+Use PerceiverAR,GPT2,and TMIDIX.
+PerceiverAR is an autoregressive, modality-agnostic architecture which uses cross-attention to map long-range inputs to a small number of latents while also maintaining end-to-end causal masking. Perceiver AR can directly attend to over a hundred thousand tokens, enabling practical long-context density estimation without the need for hand-crafted sparsity patterns or memory mechanisms.
+GPT2 has a huge scale and is a huge transformer based model trained on massive datasets.
+TMIDIX, the third party library of music generative model, can be used to assist training and reasoning.
