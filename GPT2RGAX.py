@@ -1,45 +1,5 @@
 #! /usr/bin/python3
 
-r'''###############################################################################
-###################################################################################
-#
-#   GPT2RGAX.py
-#
-#	GPT-2 with Relative Global Attention Python Module
-#   Experimental Version
-#
-#	Version 1.0
-#
-#   PLEASE NOTE THAT THIS IS A WORK IN PROGRESS
-#   CHECK BACK FOR UPDATES SOON
-#
-#	Based upon a source-code of Sashmark97:
-#   https://github.com/Sashmark97/midigen
-#
-#	Project Los Angeles
-#	Tegridy Code 2021
-#
-#   https://github.com/Tegridy-Code/Project-Los-Angeles
-#
-#
-###################################################################################
-###################################################################################
-#       Copyright 2021 Project Los Angeles / Tegridy Code
-#
-#       Licensed under the Apache License, Version 2.0 (the "License");
-#       you may not use this file except in compliance with the License.
-#       You may obtain a copy of the License at
-#
-#           http://www.apache.org/licenses/LICENSE-2.0
-#
-#       Unless required by applicable law or agreed to in writing, software
-#       distributed under the License is distributed on an "AS IS" BASIS,
-#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#       See the License for the specific language governing permissions and
-#       limitations under the License.
-###################################################################################
-###################################################################################'''
-
 ########################################################
 #
 # Critical dependencies/requirements:
@@ -830,8 +790,6 @@ def multi_head_attention_forward_rpr(query,                       # type: Tensor
 def _get_valid_embedding(Er, len_q, len_k):
     """
     ----------
-    Author: Damon Gwinn
-    ----------
     Gets valid embeddings based on max length of RPR attention
     ----------
     """
@@ -842,8 +800,6 @@ def _get_valid_embedding(Er, len_q, len_k):
 
 def _skew(qe):
     """
-    ----------
-    Author: Damon Gwinn
     ----------
     Performs the skew optimized RPR computation (https://arxiv.org/abs/1809.04281)
     ----------
