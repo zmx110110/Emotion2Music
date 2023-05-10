@@ -327,3 +327,5 @@ class PerceiverAR(nn.Module):
         acc = self.compute_accuracy(logits, labels)
         
         return (loss, acc)
+
+       # Adding emotional dimensions can make music more pleasant to listen to.
