@@ -1296,21 +1296,7 @@ def _encode(events_lol, unknown_callback=None, never_add_eot=False,
     return b''.join(data)
 
 ###################################################################################
-###################################################################################
-###################################################################################
-#
-#	Tegridy MIDI X Module (TMIDI X / tee-midi eks)
-#	Version 1.0
-#
-#	Based upon and includes the amazing MIDI.py module v.6.7. by Peter Billam
-#	pjb.com.au
-#
-#	Project Los Angeles
-#	Tegridy Code 2021
-# https://github.com/Tegridy-Code/Project-Los-Angeles
-#
-###################################################################################
-###################################################################################
+
 ###################################################################################
 
 import os
@@ -1405,8 +1391,7 @@ def Tegridy_INT_to_TXT_Converter(input_INT_list):
      
     Input: List of intergers in TMIDI-TXT-INT format
     Output: Decoded TXT string in TMIDI-TXT format
-    Project Los Angeles
-    Tegridy Code 2020'''
+    '''
 
     output_TXT_string = ''
 
@@ -1423,8 +1408,7 @@ def Tegridy_INT_String_to_TXT_Converter(input_INT_String, line_by_line_input=Tru
      
     Input: List of intergers in TMIDI-TXT-INT-String format
     Output: Decoded TXT string in TMIDI-TXT format
-    Project Los Angeles
-    Tegridy Code 2020'''
+    '''
     
     print('Tegridy Intergers String to TXT Converter')
 
@@ -1468,9 +1452,7 @@ def Tegridy_SONG_to_MIDI_Converter(SONG,
 
     Output: MIDI File
             Detailed MIDI stats
-
-    Project Los Angeles
-    Tegridy Code 2020'''                                  
+    '''                                  
 
     print('Converting to MIDI. Please stand-by...')
     
@@ -1519,8 +1501,7 @@ def Tegridy_File_Time_Stamp(input_file_name='File_Created_on_', ext = ''):
           
   Output: File name string with time-stamp and extension (time-stamped file name)
 
-  Project Los Angeles
-  Tegridy Code 2021'''       
+  '''       
 
   print('Time-stamping output file...')
 
@@ -1545,8 +1526,7 @@ def Tegridy_Any_Pickle_File_Writer(Data, input_file_name='TMIDI_Pickle_File'):
          
   Output: Named Pickle file
 
-  Project Los Angeles
-  Tegridy Code 2021'''
+  '''
 
   print('Tegridy Pickle File Writer')
 
@@ -1576,8 +1556,7 @@ def Tegridy_Any_Pickle_File_Reader(input_file_name='TMIDI_Pickle_File', ext='.pi
        
   Output: Standard Python 3 unpickled data object
 
-  Project Los Angeles
-  Tegridy Code 2021'''
+  '''
 
   print('Tegridy Pickle File Loader')
   print('Loading the pickle file. Please wait...')
@@ -1617,8 +1596,7 @@ def Optimus_MIDI_TXT_Processor(MIDI_file,
                               zero_token=False,
                               reset_timings=False):
 
-    '''Project Los Angeles
-       Tegridy Code 2021'''
+    '''............'''
   
 ###########
 
@@ -2041,8 +2019,7 @@ def Optimus_TXT_to_Notes_Converter(Optimus_TXT_String,
                                     karaoke=False,
                                     zero_token=False):
 
-    '''Project Los Angeles
-       Tegridy Code 2020'''
+    '''.......'''
 
     print('Tegridy Optimus TXT to Notes Converter')
     print('Converting TXT to Notes list...Please wait...')
@@ -2228,8 +2205,7 @@ def Optimus_Data2TXT_Converter(data,
   Output: TXT string
           INTs
 
-  Project Los Angeles
-  Tegridy Code 2021'''
+  '''
 
   txt = ''
   TXT = ''
@@ -2318,8 +2294,7 @@ def Optimus_Squash(chords_list, simulate_velocity=True, mono_compression=False):
 
              Please note that if drums are passed through as is
 
-     Project Los Angeles
-     Tegridy Code 2021'''
+     '''
 
   output = []
   ptime = 0
@@ -2375,8 +2350,7 @@ def Optimus_Signature(chords_list, calculate_full_signature=False):
     Output: Full Optimus Signature as a list
             Best/recommended Optimus Signature as a list
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
     
     # Pitches
 
@@ -2439,8 +2413,7 @@ def Tegridy_FastSearch(needle, haystack, randomize = False):
   Output: Start index of the needle iterable in a haystack iterable
           If nothing found, -1 is returned
 
-  Project Los Angeles
-  Tegridy Code 2021'''
+  '''
 
   need = copy.deepcopy(needle)
 
@@ -2474,8 +2447,7 @@ def Tegridy_Chord_Match(chord1, chord2, match_type=2):
             NOTE: Match rating == -1 means identical source chords
             NOTE: Match rating == 100 means mutual shortest chord
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     match_rating = 0
 
@@ -2526,8 +2498,7 @@ def Tegridy_Last_Chord_Finder(chords_list):
             Last chord start index in the original chords list
             First chord end index in the original chords list
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     chords = []
     cho = []
@@ -2590,8 +2561,7 @@ def Tegridy_Chords_Generator(chords_list, shuffle_pairs = True, remove_single_no
             Average pitch
             Average velocity
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     chords = []
     cho = []
@@ -2659,8 +2629,7 @@ def Tegridy_Chords_List_Music_Features(chords_list, st_dur_div = 1, pitch_div = 
 
     Output: A list of the extracted chords list's music features
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     chords_list1 = [x for x in chords_list if x]
     chords_list1.sort(reverse=False, key=lambda x: x[1])
@@ -2750,8 +2719,7 @@ def Tegridy_Transform(chords_list, to_pitch=60, to_velocity=-1):
 
     Output: Transformed flat chords list
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     transformed_chords_list = []
 
@@ -2788,8 +2756,7 @@ def Tegridy_MIDI_Zip_Notes_Summarizer(chords_list, match_type = 4):
             Number of summarized notes
             Number of dicarted notes
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     i = 0
     j = 0
@@ -2825,8 +2792,7 @@ def Tegridy_Score_Chords_Pairs_Generator(chords_list, shuffle_pairs = True, remo
             Number of created pairs
             Number of detected chords
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     chords = []
     cho = []
@@ -2879,8 +2845,7 @@ def Tegridy_Sliced_Score_Pairs_Generator(chords_list, number_of_miliseconds_per_
     Output: Sliced score pairs list
             Number of created slices
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     chords = []
     cho = []
@@ -2932,8 +2897,7 @@ def Tegridy_Timings_Converter(chords_list,
 
     Output: Converted flat chords list
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     song = chords_list
 
@@ -2995,8 +2959,7 @@ def Tegridy_Score_Slicer(chords_list, number_of_miliseconds_per_slice=2000, over
     Output: Sliced chords list
             Number of created slices
 
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     chords = []
     cho = []
@@ -3056,8 +3019,7 @@ def Tegridy_TXT_Tokenizer(input_TXT_string, line_by_line_TXT_string=True):
 
     Output: Tokenized TXT string + forward and reverse dics
     
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     print('Tegridy TXT Tokenizer')
 
@@ -3093,8 +3055,7 @@ def Tegridy_TXT_DeTokenizer(input_Tokenized_TXT_string, RDIC):
 
     Output: DeTokenized TXT string
     
-    Project Los Angeles
-    Tegridy Code 2021'''
+    '''
 
     print('Tegridy TXT DeTokenizer')
 
@@ -3122,8 +3083,7 @@ def Tegridy_List_Slicer(input_list, slices_length_in_notes=20):
      
      Output: Sliced list of lists
      
-     Project Los Angeles
-     Tegridy Code 2021'''
+     '''
 
   for i in range(0, len(input_list), slices_length_in_notes):
      yield input_list[i:i + slices_length_in_notes]
