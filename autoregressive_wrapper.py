@@ -83,4 +83,3 @@ class AutoregressiveWrapper(nn.Module):
         x_inp, x_labels = x[:, :-1], x[:, 1:]
         return self.net(x_inp, labels = x_labels, **kwargs)
     
-    # Running completed
