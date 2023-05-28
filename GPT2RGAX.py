@@ -1,13 +1,10 @@
 #! /usr/bin/python3
 
 ########################################################
-#
 # Critical dependencies/requirements:
-#
 # pip install torch
 # pip install tqdm
 # pip install matplotlib
-#
 ########################################################
 
 print('Loading GPT2-RGA Experimental Module...')
@@ -1180,5 +1177,4 @@ def plot_losses(losses, path_to_output_image_to):
 print('GPT2-RGA-X loading complete!')
 print('Enjoy!')
 
-########################################################
 ########################################################
