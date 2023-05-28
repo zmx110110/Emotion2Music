@@ -1,5 +1,29 @@
 This project 'Multi-Music-Transformer',Created by ZMX.
+
+1.About Models
 Use PerceiverAR,GPT2,and TMIDIX.
 PerceiverAR is an autoregressive, modality-agnostic architecture which uses cross-attention to map long-range inputs to a small number of latents while also maintaining end-to-end causal masking. Perceiver AR can directly attend to over a hundred thousand tokens, enabling practical long-context density estimation without the need for hand-crafted sparsity patterns or memory mechanisms.
 GPT2 has a huge scale and is a huge transformer based model trained on massive datasets.
 TMIDIX, the third party library of music generative model, can be used to assist training and reasoning.
+model = GPT(config)
+model = nn.DataParallel(model)
+eval_loss_func = nn.CrossEntropyLoss(ignore_index=DIC_SIZE)
+train_loss_func = eval_loss_func
+
+2.About Training
+First, process the dataset into three emotional dimensions of INTS for each beat.
+Secondly, load the training data into the tape model.
+thirdly, fitting the annotated data results in a continuous decrease in loss values.
+Finally, Forming emotional mapping relationships。
+number_of_continuation_notes  mapping  arousal.
+number_of_prime_tokens mapping dominance.
+temperature mapping valence
+
+3.About Inference
+Three emotional dimensions: effectiveness, arousal and dominance
+Activation and dominance are divided into two levels.
+The utility is divided into three levels
+Three dimensions are combined to form 12 emotions,
+They are excitement, joy, warmth, joy, excitement, lightness, deep affection, calmness, sadness, bitterness, and melancholy.
+[1,1,1] [2,1,1] [1,2,1] [1,1,2] [1,1,3] [1,2,2]
+[1,2,3] [2,1,1] [2,2,1] [2,2,2] [2,1,3] [2,2,3]
