@@ -328,4 +328,5 @@ class PerceiverAR(nn.Module):
         
         return (loss, acc)
 
-       # Adding emotional dimensions can make music more pleasant to listen to.
+       # Adding emotional dimensions can make music more pleasant to listen to。
+       # Each beat has 3 emotional dimensions, which can be randomly combined to form 12 emotional states.
