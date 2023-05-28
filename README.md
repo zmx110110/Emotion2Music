@@ -1,4 +1,4 @@
-# Multi-Music-Transformer
+# Emotion2Music
 
 
 ***
@@ -34,5 +34,5 @@ https://salu133445.github.io/lakh-pianoroll-dataset/
 
 ***
 
-### Project Multi-Music-Transformer made by zmx in HeFei 
+### Project Emotion2Music made by zmx in HeFei 
 ###  Code 2023
