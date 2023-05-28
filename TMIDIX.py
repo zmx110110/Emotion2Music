@@ -1,7 +1,5 @@
 #! /usr/bin/python3
 
-
-
 import sys, struct, copy
 Version = '6.7'
 VersionDate = '20201120'
