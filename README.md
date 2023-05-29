@@ -8,7 +8,7 @@
 
 [![Open In Colab][colab-badge]][colab-notebook]
 
-[colab-notebook]: <https://colab.research.google.com/github/zmx110110/Multi-Music-Transformer/blob/main/Inference.ipynb>
+[colab-notebook]: <https://colab.research.google.com/github/zmx110110/Emotion2Music/blob/main/Inference.ipynb>
 [colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
 
 ***
@@ -18,7 +18,7 @@
 
 [![Open In Colab][colab-badge]][colab-notebook1]
 
-[colab-notebook1]: <https://colab.research.google.com/github/zmx110110/Multi-Music-Transformer/blob/main/Training.ipynb>
+[colab-notebook1]: <https://colab.research.google.com/github/zmx110110/Emotion2Music/blob/main/Training.ipynb>
 [colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
 
 ***
