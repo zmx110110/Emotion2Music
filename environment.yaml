@@ -1,0 +1,19 @@
+name: Emotion2Music
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python
+  - pip
+  - cudatoolkit
+  - pytorch
+  - torchvision
+  - numpy
+  - pip:
+    - einops
+    - torch
+    - torch-summary
+    - tqdm
+    - matplotlib
+    - fluidsynth  
+    - midi2audio
